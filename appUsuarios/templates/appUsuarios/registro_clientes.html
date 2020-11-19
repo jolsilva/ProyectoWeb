@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+    <head>
+        <title>Venta Libros</title>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <link href='//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+</head>
+<body>
+    <div class="page-header">
+        <h1><a href="/">Venta Libros</a></h1>
+    </div>
+    <h2>“Los libros te curan”</h2>
+    <table>
+        <tr>
+            <td><img src="https://editorialclc.com/_EditCo/images/products/large/237.jpg" alt="Emociones"></td>
+            <td><img src= "https://www.harrymedia.com/data/media/8/libros-hp123-uk-2019.jpg" alt="Harry Potter"></td>          
+        </tr>
+        <tr>
+            <td><img src="https://images-na.ssl-images-amazon.com/images/I/812thAX3iiL._AC_SY679_.jpg" alt="Percy Jackson"></td>
+            <td><img src= "https://www.sanborns.com.mx/imagenes-sanborns-ii/1200/7502268183295.jpg" alt="Coleccion Señor"></td>
+        </tr>
+		{% load static %}
+
+<body>
+        <h3><a href="/"> Personas Registradas </a></h3>
+        <ol>
+        {% for persona in lista %}
+                <h4><li> {{ persona }} </li></h4>
+        {% endfor%}
+        </ol>  
+        <h5> Has visitado esta página {{ num_visitas }} veces </h5>      
+</body>
+</html>
+<link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+    </table>
+ <p>Visítanos en Av. Providencia N°6666, Santiago</p>
+</body>
+</html>

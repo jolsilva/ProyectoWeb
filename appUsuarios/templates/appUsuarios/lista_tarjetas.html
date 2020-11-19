@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="es">
+<head>
+    <title>Lista Personas</title>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    <link href='//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <h1>Lista de socios Club de Lectores</h1>
+    <ol>
+    {% for tarjetaLectores in listaTarjetas %}
+        <li> Rut : {{ tarjetaLectores.rut }} - Numero
+            {{ tarjetaLectores.numeroTarjeta }}  - Saldo
+            {{ tarjetaLectores.saldoDisponible }} </li>
+
+    {% endfor %}
+    </ol>
+</body>
+</html>
